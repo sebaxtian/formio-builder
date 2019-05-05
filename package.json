@@ -1,0 +1,30 @@
+{
+  "name": "formio-builder",
+  "version": "1.0.0",
+  "description": "Constructor de formularios usando el SDK y librería de formio. https://github.com/formio/formio.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebaxtian/formio-builder.git"
+  },
+  "keywords": [
+    "Builder",
+    "Forms",
+    "Formio",
+    "SDK",
+    "Library"
+  ],
+  "author": "Sebastian Rios Sabogal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebaxtian/formio-builder/issues"
+  },
+  "homepage": "https://github.com/sebaxtian/formio-builder#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.12.0"
+  }
+}
