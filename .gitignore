@@ -100,3 +100,7 @@ typings/
 .history
 
 # End of https://www.gitignore.io/api/node,visualstudiocode
+
+# Webpack
+dist/*
+!dist/.gitkeep
