@@ -28,6 +28,8 @@
 //     'https://examples.form.io/example'
 // );
 
+import {i18n} from './i18n';
+
 // Verifica en que tipo de ambiente esta la aplciacion
 if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!');
@@ -43,15 +45,20 @@ $('#tabsBuilder a').click(function(e) {
 });
 
 // Formio Builder example
-Formio.builder(document.getElementById('formbuilder'))
+Formio.builder(document.getElementById('formbuilder'), null, {
+  language: 'es',
+  i18n: i18n,
+})
     .then((formbuilder) => {
-      console.log('formbuilder: ', formbuilder);
       formbuilder.on('render', (formelement) => {
-        console.log('formelement: ', formelement);
-        // Form Renderer example
+      // Form Renderer example
         Formio.createForm(
             document.getElementById('formelement'),
-            formbuilder.form
+            formbuilder.form,
+            {
+              language: 'es',
+              i18n: i18n,
+            }
         );
       });
     })
