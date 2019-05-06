@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- FIN Bootstrap -->
+    <!-- Formio -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/formiojs@3.20.6/dist/formio.full.min.css"
     />
     <script src="https://unpkg.com/formiojs@3.20.6/dist/formio.full.min.js"></script>
+    <!-- FIN Formio -->
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
@@ -63,6 +67,15 @@
                     >Vista Previa</a
                   >
                 </li>
+                <li role="presentation">
+                  <a
+                    href="#jsonschema"
+                    aria-controls="jsonschema"
+                    role="tab"
+                    data-toggle="tab"
+                    >JSON Schema</a
+                  >
+                </li>
               </ul>
               <!-- Tab panes -->
               <div
@@ -78,6 +91,26 @@
                 </div>
                 <div role="tabpanel" class="tab-pane fade" id="formelement">
                   VISTA PREVIA
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="jsonschema">
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-xs"
+                    id="btncopiar"
+                  >
+                    Copiar
+                  </button>
+                  <a id="linkdescarga" href=""></a>
+                  <button
+                    type="button"
+                    class="btn btn-primary btn-xs"
+                    id="btndescargar"
+                  >
+                    Descargar
+                  </button>
+                  <div id="jsonformat" style="margin-top: 16px">
+                    JSON SCHEMA
+                  </div>
                 </div>
               </div>
             </div>

@@ -39,6 +39,7 @@
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {
-    "formiojs": "^3.20.6"
+    "formiojs": "^3.20.6",
+    "json-formatter-js": "^2.2.1"
   }
 }
